@@ -14,7 +14,7 @@ class Program
         double deliver = 15;
         string messageAnswer = null;
         string methodAnswer = null;
-   
+
         Console.WriteLine("Welcome to the Yummy Yummy Bakery Calculator");
         Console.WriteLine("\nAnswer the following questions to find out the cost of your small chocolate cake.");
         Console.Write("\nDo you want a special message ('Yes' or 'No')? ");
@@ -25,16 +25,16 @@ class Program
         if (messageAnswer == "Yes" && methodAnswer == "Delivery")
         {
             Console.Write("\nThe cost of your small chocolate cake is $" + ((price + message + deliver) * tax).ToString("0.00") + ".");
-        }else if (messageAnswer == "No" && methodAnswer == "Delivery")
+        } else if (messageAnswer == "No" && methodAnswer == "Delivery")
         {
             Console.Write("\nThe cost of your small chocolate cake is $" + ((price + deliver) * tax).ToString("0.00") + ".");
-        }else if (messageAnswer == "Yes" && methodAnswer == "Pick Up"){
-          
+        } else if (messageAnswer == "Yes" && methodAnswer == "Pick Up")
+        {  
             Console.Write("\nThe cost of your small chocolate cake is $" + ((price + message) * tax).ToString("0.00") + ".");
-        }else if (messageAnswer == "No" && methodAnswer == "Pick Up")
+        } else if (messageAnswer == "No" && methodAnswer == "Pick Up")
         {
             Console.Write("\nThe cost of your small chocolate cake is $" + (price * tax).ToString("0.00") + ".");
         }
-       Console.Write("\nDone");
+        Console.Write("\nDone");
     }
 }
