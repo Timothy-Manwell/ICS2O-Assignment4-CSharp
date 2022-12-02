@@ -25,13 +25,16 @@ class Program
         if (messageAnswer == "Yes" && methodAnswer == "Delivery")
         {
             Console.Write("\nThe cost of your small chocolate cake is $" + ((price + message + deliver) * tax).ToString("0.00") + ".");
-        } else if (messageAnswer == "No" && methodAnswer == "Delivery")
+        }
+        else if (messageAnswer == "No" && methodAnswer == "Delivery")
         {
             Console.Write("\nThe cost of your small chocolate cake is $" + ((price + deliver) * tax).ToString("0.00") + ".");
-        } else if (messageAnswer == "Yes" && methodAnswer == "Pick Up")
+        }
+        else if (messageAnswer == "Yes" && methodAnswer == "Pick Up")
         {  
             Console.Write("\nThe cost of your small chocolate cake is $" + ((price + message) * tax).ToString("0.00") + ".");
-        } else if (messageAnswer == "No" && methodAnswer == "Pick Up")
+        }
+        else if (messageAnswer == "No" && methodAnswer == "Pick Up")
         {
             Console.Write("\nThe cost of your small chocolate cake is $" + (price * tax).ToString("0.00") + ".");
         }
