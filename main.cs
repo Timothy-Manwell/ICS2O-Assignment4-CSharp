@@ -31,7 +31,7 @@ class Program
             Console.Write("\nThe cost of your small chocolate cake is $" + ((price + deliver) * tax).ToString("0.00") + ".");
         }
         else if (messageAnswer == "Yes" && methodAnswer == "Pick Up")
-        {  
+        {
             Console.Write("\nThe cost of your small chocolate cake is $" + ((price + message) * tax).ToString("0.00") + ".");
         }
         else if (messageAnswer == "No" && methodAnswer == "Pick Up")
